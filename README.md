@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# MERN To-Do List Application with User Authentication
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple MERN stack application that allows users to create, read, update, and delete (CRUD) items in a to-do list. The application includes user authentication using JSON Web Tokens (JWT) saved in cookies
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User registration and login
+- Create, read, update, and delete to-do items
+- JWT-based authentication to secure the to-do list
+- Responsive design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies
 
-### `npm test`
+- **Frontend:** React, Redux, Axios
+- **Backend:** Node.js, Express, Mongoose
+- **Database:** MongoDB
+- **Authentication:** JWT (JSON Web Tokens)
+- **State Management:** Redux
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To set up the project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node.js](v14 or higher)
+- [MongoDB](locally installed or use a cloud provider)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+step 4:  Clone the Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+step 2: Navigate to the backend folder:
+cd backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+step 3: Install the required dependencies:
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+step 4: Create a .env file in the backend folder for your environment variables (optional):
+JWT_SECRET=jwtsecretkey
 
-## Learn More
+step 5: Start the MongoDB server (if using locally):
+mongod
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+step 6: Run the backend server:
+npm run dev
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Set Up the Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+step 1: Navigate to the frontend folder:
+/frontend
 
-### Analyzing the Bundle Size
+step 1: Install the required dependencies:
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+step 1: Start the React development server:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
